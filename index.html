@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my design</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a  class="logo" href="#"> AIR<span>ME</span></a>
+            <img id= "mobile-cta" class="mobile-menu" src="images/menu.svg" alt="open navigation">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="close navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">features</a></li>
+                    <li><a href="#">pricing</a></li>
+                    <li><a href="#">pricing</a></li>
+                    </ul>
+                <ul class="secondary-nav">
+                    <li><a href="#">contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go premium</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">IT'S ABOUT TO BLOW</p>
+                <h1>GETTING IT RIGHT ALWAYS AS BEFORE</h1>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for Free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="watch a video">watch a video
+                    </a>
+                </div> 
+            </div>
+            <img src="images/illustration.svg" alt="illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+                <ul class="features-list">
+                    <li>Unlimited Tasks</li>
+                    <li>going great</li>
+                    <li>empty bin</li>
+                    <li>understanding white</li>
+                    <li>task is awesome</li>
+                    <li>task is awesome</li>
+                </ul> 
+            <img src="images/holding-phone.jpg" alt="man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+       <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>lorem ipsum dolor sit amet, consetetur
+                    Lorem ipsum dolor sit amet, consetetu
+                    Lorem ipsum dolor sit amet, consetetu</blockquote>
+                    <cite>-John doe</cite>
+                </li>
+        
+       
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>lorem ipsum dolor sit amet, consetetur
+                    Lorem ipsum dolor sit amet, consetetu
+                    Lorem ipsum dolor sit amet, consetetu</blockquote>
+                    <cite>-John doe</cite>
+                </li>
+       
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>lorem ipsum dolor sit amet, consetetur
+                    Lorem ipsum dolor sit amet, consetetu
+                    Lorem ipsum dolor sit amet, consetetu</blockquote>
+                    <cite>-John doe</cite>
+                </li>
+            </ul>
+       </div>
+    </section>
+
+    <section class="contact-section">
+        <div classs="container">
+            <div class="contact-left">
+                <h2>contact</h2>
+                <form action="">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">EMAIL</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">MESSAGE</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="send message">
+                </form>
+                <div class="contact-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1014731.1226790063!2d2.7234776564193295!3d6.547744523303517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1661435568975!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+            const mobileBtn = document.getElementById('mobile-cta') 
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+            mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        });
+
+            mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        });
+    
+    </script>
+</body>
+</html>
